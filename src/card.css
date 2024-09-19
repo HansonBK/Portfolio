@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-cont {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: auto;
+    text-align: center;
+    padding: 30px 10%;
+    justify-content: center;
+    background-color: #2f3036;
+}
+
+.grid-item {
+    background-color: #3d3e44;
+    display: flex;
+    flex-direction: column; 
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 600px;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.6rem;
+}
+
+.card-img {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3d3e44; 
+}
+
+.card-img img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    background-color: #3d3e44; 
+}
+
+.card-h {
+    background-color: #3d3e44; 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+.card-h h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    background-color: #3d3e44;
+}
+
+.card-p {
+    background-color: #3d3e44; 
+    padding: 10px;
+    border-radius: 5px; 
+}
+
+.card-p p {
+    margin: 0;
+    font-size: 0.8rem;
+    background-color: #3d3e44;
+}
+
+.card-b {
+    margin-top: auto; 
+    background-color: #3d3e44;
+}
+
+.card-b button {
+    background-color: rgba(0, 136, 169, 1); 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s;
+}
+
+.card-b button:hover {
+    background-color: rgba(0, 136, 169, 0.8); 
+}
+
+
+@media (max-width: 768px) {
+    .grid-item {
+        max-height: 400px;
+    }
+
+    .card-h h1 {
+        font-size: 1rem;
+    }
+
+    .card-p p {
+        font-size: 0.7rem;
+    }
+}
